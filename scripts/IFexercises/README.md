@@ -1,4 +1,4 @@
-# Sintaxa if-then-else with command
+# Syntax if-then-else with command
 
 ```bash
 if command; then
