@@ -1,4 +1,5 @@
-#FOR loop sintax
+# FOR loop sintax
+
 ```bash
 
 Numeric ranges for syntax is as follows:
