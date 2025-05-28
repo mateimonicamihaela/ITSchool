@@ -9,5 +9,4 @@ while [ condition ]; do
    command2
    command3
 done
-
 ```
