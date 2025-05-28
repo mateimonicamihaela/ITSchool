@@ -1,7 +1,19 @@
+# Sintaxa if-then-else with command
 
-
-if [ condiție ]; then 
-# Comenzi dacă condiția este adevărată 
-else 
-# Comenzi dacă condiția este falsă 
+```bash
+if command; then
+    echo "Comanda a avut succes (exit code 0)"
+else
+    echo "Comanda a eșuat (exit code diferit de 0)"
 fi
+```
+
+Sau negatia
+
+```bash
+if ! command; then
+    echo "Comanda a eșuat (exit code diferit de 0)"
+else
+    echo "Comanda a avut succes (exit code 0)"
+fi
+```
