@@ -1,6 +1,5 @@
-# ITSchool
-Portofoliu ITSchool
-#Inca un status
-#STATUS
+# ITSchool - DevOps
+
+ITSchool Portfolio - A collection of scripts and materials for DevOps courses.
 
 
