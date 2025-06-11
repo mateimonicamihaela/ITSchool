@@ -127,4 +127,42 @@ Ce face scriptul:
 
 
 
+## Exercițiul 7: Afișare utilizatori dintr-un grup
+
+**Cerință:**
+Scriptul afișează toți utilizatorii care fac parte dintr-un grup, separați prin spațiu. Scriptul primește ca argument obligatoriu numele grupului.
+
+**Fișier script:**
+./ex7-group-list.sh
+
+### Rulare
+./ex7-group-list.sh sudo
+./ex7-group-list.sh grup_inexistent
+
+Coduri de ieșire
+    0 – Scriptul a rulat cu succes.
+    1 – Lipsă argument (numele grupului nu a fost dat).
+    2 – Grupul nu există
+
+Ce face scriptul:
+    Verifică dacă a fost primit exact un argument.
+    Caută grupul specificat în fișierul /etc/group.
+    Dacă grupul există:
+        Extrage lista de utilizatori asociați.
+        Afișează utilizatorii, separați prin spațiu.
+
+    Dacă grupul nu conține niciun utilizator, nu afișează nimic.
+    Dacă grupul nu există, afișează un mesaj de eroare.
+
+
+
+
+
+
+
+
+
+
+
+
 
