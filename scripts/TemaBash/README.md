@@ -94,6 +94,31 @@ Ce face scriptul:
 
 
 
+## Exercițiul 4: 
+
+**Cerință:**
+
+
+**Fișier script:**
+[`ex4-config.sh`](./ex4-config.sh)
+
+
+### Rulare
+
+
+
+Coduri de ieșire:
+
+
+
+
+
+Ce face scriptul:
+
+
+
+
+
 
 ## Exercițiul 5: Backup fișier doar dacă a fost modificat
  
@@ -101,11 +126,10 @@ Ce face scriptul:
 Scriptul face backup la un fișier primit prin variabila de mediu BACKUP_FILE_PATH, doar dacă fișierul a fost modificat (comparând hash-ul conținutului cu cel al backupurilor existente).
 
 **Fișier script:**
-./ex5-backup-file.sh)
+[`ex5-backup-file.sh`](./ex5-backup-file.sh)
 
 ### Rulare
 export BACKUP_FILE_PATH=my-file.txt
-_
 
 Coduri de ieșire
 	0 – Backup creat cu succes sau redenumire efectuată.
@@ -123,6 +147,30 @@ Ce face scriptul:
 
 
 
+## Exercițiul 6: 
+
+**Cerință:**
+
+
+**Fișier script:**
+[`ex6_dir_backup.sh`](./ex6_dir_backup.sh)
+
+
+### Rulare
+
+
+
+Coduri de ieșire
+
+
+
+
+
+Ce face scriptul:
+
+
+
+
 
 
 
@@ -131,15 +179,14 @@ Ce face scriptul:
 
 **Cerință:**
 Scriptul afișează toți utilizatorii care fac parte dintr-un grup, separați prin spațiu. Scriptul primește ca argument obligatoriu numele grupului.
-
 **Fișier script:**
-./ex7-group-list.sh
+[`ex7-group-list.sh`](./ex7-group-list.sh)
 
 ### Rulare
 ./ex7-group-list.sh sudo
 ./ex7-group-list.sh grup_inexistent
 
-Coduri de ieșire
+Coduri de ieșire:
     0 – Scriptul a rulat cu succes.
     1 – Lipsă argument (numele grupului nu a fost dat).
     2 – Grupul nu există
@@ -158,11 +205,92 @@ Ce face scriptul:
 
 
 
+## Exercițiul 8: Copiere utilizatori între grupuri
+
+**Cerință:**  
+Scriptul copiază toți utilizatorii care fac parte dintr-un **grup sursă** în alt **grup destinație**.  
+Scriptul primește **doi parametri obligatorii**: numele grupului sursă și numele grupului destinație (în această ordine).  
+Grupurile trebuie să fie diferite.
+
+**Fișier script:**  
+[`ex8-group-copy.sh`](./ex8-group-copy.sh)
+
+### Rulare
+sudo ./ex8-group-copy.sh developers testers
+sudo ./ex8-group-copy.sh testers testers
+sudo ./ex8-group-copy.sh grup_inexistent testers
+
+Coduri de ieșire:
+	0 - Scriptul a rulat cu succes.
+	1 - Lipsă argumente (nu au fost dați exact 2 parametri).
+	2 - Grupul sursă și grupul destinație sunt identice.
+	3 - Grupul sursă nu există.
+	4 - Grupul destinație nu există.
+	5 - Grupul sursă nu conține niciun utilizator.
+
+Ce face scriptul:
+
+
+
+
+## Exercițiul 9: Verificare și restart automat pentru serviciul `ssh` 
+
+**Cerință:**
+Scrieți un script care verifică dacă serviciul `ssh` (OpenSSH Server) este oprit.  
+Dacă este oprit, scriptul trebuie să îl pornească automat.  
+Scriptul trebuie adăugat în `crontab` pentru a rula **la fiecare minut**.
+
+**Fișier script:**
+[`ex9-check-sshd`](./ex9-check-sshd)
+
+
+### Rulare
+chmod +x ex9-check-sshd.sh
+sudo ./ex9-check-sshd.sh
+sudo crontab -e
+	Adaugă linia de cron la finalul fișierului deschis:
+	 # Edit this file to introduce tasks to be run by cron.
+	* * * * * /home/eu/work/ITSchool/scripts/TemaBash/ex9-check-sshd.sh >> /var/log/ex9-check-sshd.log 2>&1
+sudo crontab -l
+sudo systemctl stop ssh
+systemctl status ssh
+cat /var/log/ex9-check-sshd.log
+
+
+Coduri de ieșire
+Scriptul se bazează pe comanda systemctl is-active:
+	Returnează 0 dacă serviciul este activ.
+	Returnează 3 sau inactive dacă serviciul este oprit.
+
+Ce face scriptul:
+Verifică dacă serviciul `ssh` este activ folosind `systemctl`.
+- Dacă serviciul este oprit:
+  - Scriptul încearcă să îl repornească automat.
+  - Afișează un mesaj cu succesul sau eșecul operației.
+- Scriptul adaugă timestamp la fiecare mesaj pentru ușurința logării.
+- Este destinat să ruleze periodic prin `cron` pentru monitorizare automată.
+
+
+
+
+## Exercițiul 10: 
+
+**Cerință:**
+
+
+**Fișier script:**
+[`ex10`](./ex10)
+
+
+### Rulare
+
+
+
+Coduri de ieșire
 
 
 
 
 
-
-
+Ce face scriptul:
 
