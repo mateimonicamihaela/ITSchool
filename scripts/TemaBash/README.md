@@ -126,7 +126,7 @@ Scriptul face backup la un fișier primit prin variabila de mediu BACKUP_FILE_PA
 
 **Fișier script:**
 
-[`ex5-backup-file.sh`](./ex5-backup-file.sh)
+[`ex5_backup_file.sh`](./ex5_backup_file.sh)
 
 ### Rulare
 export BACKUP_FILE_PATH=my-file.txt
