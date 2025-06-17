@@ -1,4 +1,4 @@
-1-# Bash Scripting - Exerciții
+# Bash Scripting - Exerciții
 
 Acesta este o tema cu exerciții Bash pentru practica scriptingului în shell.
 Fiecare script include cerința în comentariu, validări de bază, mesaje explicative și coduri de ieșire corecte.
