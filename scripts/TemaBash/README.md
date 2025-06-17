@@ -293,15 +293,14 @@ Adaugati un script în acel director și încercați să-l executați de oriunde
 
 
 ### Rulare
-chmod +x ex10-add-path.sh
-nano ~/.bash_profile
-[ -f ~/scripts/ex10-add-path.sh ] && . ~/scripts/ex10-add-path.sh
-mkdir -p ~/bin-itschools
-echo -e '#!/bin/bash\necho \"Salut de la IT School!\"' > ~/bin-itschools/hello-itschool.sh
-chmod +x ~/bin-itschools/hello-itschool.sh
-source ~/.bash_profile
-hello-itschool.sh
-
+- chmod +x ex10-add-path.sh
+- nano ~/.bash_profile
+- [ -f ~/scripts/ex10-add-path.sh ] && . ~/scripts/ex10-add-path.sh
+- mkdir -p ~/bin-itschools
+- echo -e '#!/bin/bash\necho \"Salut de la IT School!\"' > ~/bin-itschools/hello-itschool.sh
+- chmod +x ~/bin-itschools/hello-itschool.sh
+- source ~/.bash_profile
+- hello-itschool.sh
 
 Coduri de ieșire
 
@@ -421,9 +420,9 @@ Faceti un script cu numele which.sh ce:
 
 
 ### Rulare
-chmod +x ex13-which.sh
-./ex13-which.sh ls  -----> Executabil gasit in: /usr/bin/ls  si /bin/ls
-./ex13-which.sh dhabsgh -------> Eroare: Nu s-a găsit niciun executabil
+- chmod +x ex13-which.sh
+- ./ex13-which.sh ls  -----> Executabil gasit in: /usr/bin/ls  si /bin/ls
+- ./ex13-which.sh dhabsgh -------> Eroare: Nu s-a găsit niciun executabil
 
 
 Coduri de ieșire
