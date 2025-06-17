@@ -315,7 +315,6 @@ Ce face scriptul:
 	- Dacă da:
 		- Verifică dacă este deja în PATH.
 		- Dacă nu este, îl adaugă la începutul PATH (pentru prioritate).
-
 	- Dacă directorul nu există:
 		- Scriptul afișează o eroare și iese cu cod de eroare.
 Acest script este util pentru a crea un spațiu personal de comenzi/scripturi executabile, disponibil global pentru utilizator.
