@@ -9,8 +9,7 @@ Faceti un script in python care primește 2 parametrii: nume utilizator și vars
 2. Dacă nu au fost pasati parametrii, aruncati o exceptie.
 3. Dacă au fost pasati parametrii:
    a. printati mesajul “Au fost pasati <n> parametrii”.
-   b. daca varsta este mai mare de 18 ani, creati un subdirector pe disk cu numele
-utilizatorului.
+   b. daca varsta este mai mare de 18 ani, creati un subdirector pe disk cu numele utilizatorului.
 """
 
 import sys

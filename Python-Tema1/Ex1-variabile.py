@@ -2,10 +2,16 @@
 #!/usr/bin/env python3
 """
 Exercițiul 1:
+Scrieti un script de python in care:
 1. Definim variabile de tip string, number, boolean, None, list, set, dictionary, tuple
-2. Pentru fiecare afișăm valoarea și tipul
-3. Creăm o variabilă documentație cu descriere multi-linie
-4. Afișăm documentația în consolă
+2. Pentru fiecare variabila afișați valoarea și tipul ei folosind metoda print
+3. Creați o alta variabila cu numele documentație de tip string pe mai multe linii in care
+sa puneti pentru fiecare variabila ceva de genul:
+
+Variabila X1 este de tipul Y1 si are valoare Z1
+Variabila X2 este de tipul Y2 si are valoare Z2
+“””
+4. Afisati si acest string documentatie in consola.
 """
 
 # 1. Definirea variabilelor
