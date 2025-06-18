@@ -1,8 +1,8 @@
 
 # Python - Exerciții
 
-Acesta este o tema cu exerciții in Python.
-Fiecare script include cerința în comentariu, validări de bază, mesaje explicative și coduri de ieșire corecte.
+Acesta este prima tema cu exerciții in Python.
+
 
 ## Exercițiul 1:
 
@@ -12,7 +12,7 @@ Fiecare script include cerința în comentariu, validări de bază, mesaje expli
 
 **Fișier script:**  
 
-[`ex1-asteapta-fisier.sh`](./ex1-asteapta-fisier.sh)
+[`ex1-variabile.py`](./ex1-variabile.py)
 
 
 

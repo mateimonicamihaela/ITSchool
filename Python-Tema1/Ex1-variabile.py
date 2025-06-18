@@ -1,11 +1,12 @@
 
 #!/usr/bin/env python3
-
-# Exercițiul 1:
-# 1. Definim variabile de tip string, number, boolean, None, list, set, dictionary, tuple
-# 2. Pentru fiecare afișăm valoarea și tipul
-# 3. Creăm o variabilă documentație cu descriere multi-linie
-# 4. Afișăm documentația în consolă
+"""
+Exercițiul 1:
+1. Definim variabile de tip string, number, boolean, None, list, set, dictionary, tuple
+2. Pentru fiecare afișăm valoarea și tipul
+3. Creăm o variabilă documentație cu descriere multi-linie
+4. Afișăm documentația în consolă
+"""
 
 # 1. Definirea variabilelor
 string_var = "Salut"                           # string
