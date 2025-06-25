@@ -16,7 +16,7 @@ parola = input("Introduceți parola: ")
 # 2. Citim valoarea variabilei de mediu PAROLA_SECRETA
 parola_secreta = os.getenv("PAROLA_SECRETA")
 
-# 3. Verificare si afisare rezultat
+# 3. Verificare și afișare rezultat
 if parola == parola_secreta:
     print("Parola corectă")
 else:
