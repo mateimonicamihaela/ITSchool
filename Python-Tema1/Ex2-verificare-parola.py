@@ -10,11 +10,15 @@ Scrieti un program in python care:
 
 import os
 
+# Setăm manual variabila de mediu (doar pentru testare locală)
+# În practică, această variabilă ar fi setată din sistemul de operare
+os.environ["PAROLA_SECRETA"] = "abc123"
+
 # 1. Citim parola introdusă de utilizator
 parola = input("Introduceți parola: ")
 
 # 2. Citim valoarea variabilei de mediu PAROLA_SECRETA
-parola_secreta = os.getenv("PAROLA_SECRETA")
+parola_secreta = os.environ.get("PAROLA_SECRETA")
 
 # 3. Verificare și afișare rezultat
 if parola == parola_secreta:
