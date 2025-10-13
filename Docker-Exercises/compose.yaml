@@ -1,0 +1,12 @@
+services:
+  frontend:
+    image: nginx
+    ports:
+      - "8081:80"
+
+ 
+
+
+
+
+
